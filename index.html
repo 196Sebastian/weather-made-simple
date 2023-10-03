@@ -8,7 +8,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="general-style.css">
+  <link rel="stylesheet" href="styles/general-style.css">
+  <link rel="stylesheet" href="styles/weather-details-styles.css">
+  <link rel="stylesheet" href="styles/search-container-style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +19,24 @@
 
 <body>
 
-  <div class="card">
-    <div class="search">
-      <input type="text" placeholder="Enter city" spellcheck="true">
-      <button><img src="images/search.png"></button>
-    </div>
+  <main>
+    <header class="header">
+      <div class="left-section"></div>
 
-    <div class="weather">
-      <img class="weather-icon" src="images/rain.png">
-      <h1 class="temp">22*</h1>
-      <h2 class="city">New York</h2>
+      <div class="search-section">
+        <input type="text" placeholder="Enter city" spellcheck="true">
+        <button><img src="images/search.png"></button>
+      </div>
+
+      <div class="right-section"></div>
+    </header>
+
+    <section>
+      <div class="weather-display">
+        <img class="weather-icon" src="images/rain.png">
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">New York</h2>
+      </div>
 
       <div class="weather-details">
         <div class="col">
@@ -45,8 +55,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
 </body>
 
